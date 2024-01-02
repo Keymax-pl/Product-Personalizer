@@ -11,14 +11,14 @@ const ProductForm = ({
     currentColor,
     setCurrentColor,
     colors,
-    getPrice,
+    price,
     title,
   }) => {
 
     const addToCart = (e) => {
         e.preventDefault();
         console.log('name', title);
-        console.log('price', getPrice());
+        console.log('price', price);
         console.log('color', currentColor);
         console.log('size', currentSize);
     
@@ -41,7 +41,6 @@ const ProductForm = ({
     currentSize: PropTypes.string.isRequired,
     setCurrentSize: PropTypes.func.isRequired,
     sizes: PropTypes.array.isRequired,
-    getPrice: PropTypes.func.isRequired,
 };
 
 export default ProductForm;
